@@ -6,7 +6,7 @@ from datetime import datetime
 
 class DeviceLogModelTest(TestCase):
     def setUp(self):
-        employee = Employee.objects.create(name='Alice', email='alice@example.com', department='HR')
+        employee = Employee.objects.create(name='HRR', email='hrr@example.com', department='HR')
         device = Device.objects.create(name='Tablet', description='Company Tablet', assigned_to=employee)
         DeviceLog.objects.create(device=device, checkout_time=datetime.now(), condition_on_checkout='Good')
 
